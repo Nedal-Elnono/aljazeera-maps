@@ -129,6 +129,7 @@ export function countries(wv, want = 'lo') {
 }
 
 export function loadAdmin1(a3) {
+  if (!a3) return Promise.reject(new Error('no country code'));
   if (A1[a3]) return Promise.resolve(A1[a3]);
   return once('admin1:' + a3, async () => {
     const topo = await getJSON(`${BASE}admin1/${a3}.json`);
@@ -140,7 +141,7 @@ export function loadAdmin1(a3) {
   });
 }
 export const admin1 = (a3) => A1[a3] || null;
-export const admin1Loading = (a3) => { if (!A1[a3]) loadAdmin1(a3).catch(() => {}); };
+export const admin1Loading = (a3) => { if (a3 && !A1[a3]) loadAdmin1(a3).catch(() => {}); };
 export async function admin1Index() { return (A1INDEX ||= await getJSON(`${BASE}admin1/index.json`)); }
 
 /** Districts and finer units from geoBoundaries (CC BY / ODbL per country; credited in exports). */
