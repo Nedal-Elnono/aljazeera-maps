@@ -1,0 +1,114 @@
+/* One design system from two: folks (the components, springs, glass, ink-only highlight)
+   + BrandingOS (the warm paper palette, tighter radii, warm shadows, Plus Jakarta Sans, its ease).
+   folks components read --f-*; ported BrandingOS pieces read --ds-*. Both point at the same values. */
+
+:root, [data-theme="light"] {
+  /* BrandingOS paper palette */
+  --ds-bg: #f5f4ef;
+  --ds-surface: #ffffff;
+  --ds-surface-hover: #efeee8;
+  --ds-surface-subtle: #faf9f5;
+  --ds-surface-sunk: #ebe9e2;
+  --ds-border: #e6e4dd;
+  --ds-border-strong: #d3d0c6;
+  --ds-text: #0e0e0e;
+  --ds-text-secondary: #55534c;
+  --ds-text-muted: #8a877e;
+  --ds-accent: #111113;
+  --ds-accent-fg: #f5f4ef;
+  --ds-danger: #b4453a;
+  --ds-focus-ring: rgba(17, 17, 19, .16);
+  --ds-guide: #ff3d7f;              /* snapping guides: the one loud color, editor-only */
+  --ds-select: #111113;
+
+  --ds-shadow-xs: 0 1px 2px rgba(20, 18, 14, .05);
+  --ds-shadow-sm: 0 2px 8px rgba(20, 18, 14, .08);
+  --ds-shadow-md: 0 6px 20px rgba(20, 18, 14, .12);
+  --ds-shadow-float: 0 4px 10px rgba(20, 18, 14, .08), 0 16px 40px rgba(20, 18, 14, .16);
+
+  --ds-r-pill: 999px; --ds-r-control: 8px; --ds-r-tile: 10px; --ds-r-menu: 12px; --ds-r-card: 14px; --ds-r-panel: 18px;
+  --ds-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ds-dur-fast: 150ms; --ds-dur: 220ms; --ds-dur-slow: 360ms;
+  --ds-font: "Plus Jakarta Sans", "Thmanyah Sans", "IBM Plex Sans Arabic", "SF Arabic", -apple-system, system-ui, sans-serif;
+  --ds-font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* folks tokens, re-pointed at the paper palette */
+  --f-ink: var(--ds-accent);
+  --f-on-ink: var(--ds-accent-fg);
+  --f-canvas: var(--ds-bg);
+  --f-surface: var(--ds-surface);
+  --f-chip: var(--ds-surface-hover);
+  --f-chip-strong: var(--ds-surface-sunk);
+  --f-line: var(--ds-border);
+  --f-line2: var(--ds-border-strong);
+  --f-mute: var(--ds-text-muted);
+  --f-dim: var(--ds-text-secondary);
+  --f-danger: var(--ds-danger);
+  --f-glass: rgba(255, 254, 250, .78);
+  --f-glass-line: rgba(40, 32, 16, .08);
+  --f-scrim: rgba(28, 24, 16, .26);
+  --f-shadow-rest: var(--ds-shadow-sm);
+  --f-shadow-raised: var(--ds-shadow-xs);
+  --f-shadow-lifted: var(--ds-shadow-md);
+  --f-shadow-float: var(--ds-shadow-float);
+  --f-shadow-glass: 0 6px 18px -8px rgba(20, 18, 14, .2);
+  --f-font-arabic: var(--ds-font);
+  --f-font-ui: var(--ds-font);
+  --f-font-mono: var(--ds-font-mono);
+  --f-ease-out: var(--ds-ease);
+  --f-ease-enter: var(--ds-ease);
+
+  /* BrandingOS radii (tighter than iOS), still on folks' superellipse multiplier */
+  --f-r-tiny: calc(6px * var(--f-k));
+  --f-r-small: calc(8px * var(--f-k));
+  --f-r-chip: calc(10px * var(--f-k));
+  --f-r-control: calc(10px * var(--f-k));
+  --f-r-card: calc(14px * var(--f-k));
+  --f-r-panel: calc(18px * var(--f-k));
+  --f-r-sheet: calc(24px * var(--f-k));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ds-bg: #141414; --ds-surface: #1d1c1a; --ds-surface-hover: #262521; --ds-surface-subtle: #191917; --ds-surface-sunk: #2f2d29;
+    --ds-border: #2c2b27; --ds-border-strong: #44423c;
+    --ds-text: #f5f4f0; --ds-text-secondary: #b9b6ac; --ds-text-muted: #85827a;
+    --ds-accent: #f5f4f0; --ds-accent-fg: #141414; --ds-danger: #e0776b; --ds-focus-ring: rgba(245, 244, 240, .18); --ds-select: #f5f4f0;
+    --ds-shadow-xs: 0 0 0 1px rgba(255, 255, 255, .04);
+    --ds-shadow-sm: 0 2px 8px rgba(0, 0, 0, .4);
+    --ds-shadow-md: 0 0 0 1px var(--ds-border), 0 10px 24px rgba(0, 0, 0, .5);
+    --ds-shadow-float: 0 0 0 1px var(--ds-border), 0 18px 44px rgba(0, 0, 0, .6);
+    --f-glass: rgba(33, 32, 29, .8); --f-glass-line: rgba(255, 255, 255, .08); --f-scrim: rgba(0, 0, 0, .5);
+    --f-shadow-glass: 0 6px 18px -8px rgba(0, 0, 0, .6);
+  }
+}
+[data-theme="dark"] {
+  --ds-bg: #141414; --ds-surface: #1d1c1a; --ds-surface-hover: #262521; --ds-surface-subtle: #191917; --ds-surface-sunk: #2f2d29;
+  --ds-border: #2c2b27; --ds-border-strong: #44423c;
+  --ds-text: #f5f4f0; --ds-text-secondary: #b9b6ac; --ds-text-muted: #85827a;
+  --ds-accent: #f5f4f0; --ds-accent-fg: #141414; --ds-danger: #e0776b; --ds-focus-ring: rgba(245, 244, 240, .18); --ds-select: #f5f4f0;
+  --ds-shadow-xs: 0 0 0 1px rgba(255, 255, 255, .04);
+  --ds-shadow-sm: 0 2px 8px rgba(0, 0, 0, .4);
+  --ds-shadow-md: 0 0 0 1px var(--ds-border), 0 10px 24px rgba(0, 0, 0, .5);
+  --ds-shadow-float: 0 0 0 1px var(--ds-border), 0 18px 44px rgba(0, 0, 0, .6);
+  --f-glass: rgba(33, 32, 29, .8); --f-glass-line: rgba(255, 255, 255, .08); --f-scrim: rgba(0, 0, 0, .5);
+  --f-shadow-glass: 0 6px 18px -8px rgba(0, 0, 0, .6);
+}
+/* folks' dark block sets --f-* directly: point them back at the merged values. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --f-ink: var(--ds-accent); --f-on-ink: var(--ds-accent-fg); --f-canvas: var(--ds-bg); --f-surface: var(--ds-surface);
+    --f-chip: var(--ds-surface-hover); --f-chip-strong: var(--ds-surface-sunk); --f-line: var(--ds-border); --f-line2: var(--ds-border-strong);
+    --f-mute: var(--ds-text-muted); --f-dim: var(--ds-text-secondary); --f-danger: var(--ds-danger);
+    --f-shadow-rest: var(--ds-shadow-sm); --f-shadow-raised: var(--ds-shadow-xs); --f-shadow-lifted: var(--ds-shadow-md); --f-shadow-float: var(--ds-shadow-float);
+  }
+}
+[data-theme="dark"] {
+  --f-ink: var(--ds-accent); --f-on-ink: var(--ds-accent-fg); --f-canvas: var(--ds-bg); --f-surface: var(--ds-surface);
+  --f-chip: var(--ds-surface-hover); --f-chip-strong: var(--ds-surface-sunk); --f-line: var(--ds-border); --f-line2: var(--ds-border-strong);
+  --f-mute: var(--ds-text-muted); --f-dim: var(--ds-text-secondary); --f-danger: var(--ds-danger);
+  --f-shadow-rest: var(--ds-shadow-sm); --f-shadow-raised: var(--ds-shadow-xs); --f-shadow-lifted: var(--ds-shadow-md); --f-shadow-float: var(--ds-shadow-float);
+}
+
+/* Focus: BrandingOS ring, everywhere */
+.f :where(button, [role="option"], input, textarea, select):focus-visible { outline: 0; box-shadow: 0 0 0 3px var(--ds-focus-ring), inset 0 0 0 1.5px var(--ds-accent); }

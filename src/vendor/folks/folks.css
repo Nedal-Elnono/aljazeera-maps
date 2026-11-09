@@ -1,0 +1,647 @@
+/*! folks design system 1.0.0 · built by build.py from tokens/folks.tokens.json + src/components.css */
+/* ---------- tokens (generated from tokens/folks.tokens.json; don't edit here) ---------- */
+
+:root, [data-theme="light"] {
+  color-scheme: light;
+  --f-ink: #0B0B0B;
+  --f-on-ink: #FFFFFF;
+  --f-canvas: #F6F6F6;
+  --f-surface: #FFFFFF;
+  --f-chip: #EAEAEA;
+  --f-chip-strong: #DCDCDC;
+  --f-line: #E3E3E3;
+  --f-line2: #CCCCCC;
+  --f-mute: #8A8A8A;
+  --f-dim: #555555;
+  --f-danger: #C4302B;
+  --f-glass: rgba(255,255,255,0.72);
+  --f-glass-line: rgba(0,0,0,0.07);
+  --f-hatch: rgba(0,0,0,0.14);
+  --f-scrim: rgba(0,0,0,0.28);
+  --f-shadow: #000000;
+  --f-tone-1-bg: #E6E6E6; --f-tone-1-fg: #1A1A1A;
+  --f-tone-2-bg: #D0D0D0; --f-tone-2-fg: #1A1A1A;
+  --f-tone-3-bg: #B3B3B3; --f-tone-3-fg: #111111;
+  --f-tone-4-bg: #8A8A8A; --f-tone-4-fg: #FFFFFF;
+  --f-tone-5-bg: #4A4A4A; --f-tone-5-fg: #FFFFFF;
+  --f-tone-6-bg: #1C1C1C; --f-tone-6-fg: #FFFFFF;
+  --f-shadow-rest: 0px 6px 10px -2px rgba(0,0,0,0.12);
+  --f-shadow-raised: 0px 3px 8px 0px rgba(0,0,0,0.06);
+  --f-shadow-lifted: 0px 16px 26px -8px rgba(0,0,0,0.30);
+  --f-shadow-float: 0px 18px 40px -10px rgba(0,0,0,0.35);
+  --f-shadow-glass: 0px 6px 18px -8px rgba(0,0,0,0.18);
+}
+:root {
+  --f-gray-0: #FFFFFF;
+  --f-gray-3: #F6F6F6;
+  --f-gray-8: #EAEAEA;
+  --f-gray-11: #E3E3E3;
+  --f-gray-14: #DCDCDC;
+  --f-gray-20: #CCCCCC;
+  --f-gray-30: #B3B3B3;
+  --f-gray-46: #8A8A8A;
+  --f-gray-67: #555555;
+  --f-gray-71: #4A4A4A;
+  --f-gray-84: #2B2B2B;
+  --f-gray-88: #1E1E1E;
+  --f-gray-92: #141414;
+  --f-gray-96: #0B0B0B;
+  --f-gray-100: #000000;
+  --f-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
+  --f-font-rounded: ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif;
+  --f-font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --f-font-arabic: "Thmanyah Sans", "SF Arabic", "Geeza Pro", -apple-system, system-ui, sans-serif;
+  --f-font-ja: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --f-font-ko: -apple-system, "Apple SD Gothic Neo", system-ui, sans-serif;
+  --f-weight-regular: 400;
+  --f-weight-medium: 500;
+  --f-weight-semibold: 600;
+  --f-weight-bold: 700;
+  --f-weight-heavy: 800;
+  --f-text-amount-size: 2.875rem; --f-text-amount-weight: 700; --f-text-amount-lh: 1.05; --f-text-amount-track: -0.5px;
+  --f-text-display-size: 2.125rem; --f-text-display-weight: 700; --f-text-display-lh: 1.15; --f-text-display-track: 0.2px;
+  --f-text-title-size: 1.75rem; --f-text-title-weight: 700; --f-text-title-lh: 1.2; --f-text-title-track: 0px;
+  --f-text-title2-size: 1.375rem; --f-text-title2-weight: 700; --f-text-title2-lh: 1.25; --f-text-title2-track: 0px;
+  --f-text-title3-size: 1.25rem; --f-text-title3-weight: 600; --f-text-title3-lh: 1.25; --f-text-title3-track: 0px;
+  --f-text-headline-size: 1.0625rem; --f-text-headline-weight: 600; --f-text-headline-lh: 1.3; --f-text-headline-track: 0px;
+  --f-text-body-size: 1.0625rem; --f-text-body-weight: 400; --f-text-body-lh: 1.35; --f-text-body-track: 0px;
+  --f-text-callout-size: 1rem; --f-text-callout-weight: 400; --f-text-callout-lh: 1.35; --f-text-callout-track: 0px;
+  --f-text-subheadline-size: 0.9375rem; --f-text-subheadline-weight: 400; --f-text-subheadline-lh: 1.35; --f-text-subheadline-track: 0px;
+  --f-text-footnote-size: 0.8125rem; --f-text-footnote-weight: 400; --f-text-footnote-lh: 1.35; --f-text-footnote-track: 0px;
+  --f-text-caption-size: 0.75rem; --f-text-caption-weight: 400; --f-text-caption-lh: 1.3; --f-text-caption-track: 0px;
+  --f-text-caption2-size: 0.6875rem; --f-text-caption2-weight: 400; --f-text-caption2-lh: 1.25; --f-text-caption2-track: 0.1px;
+  --f-space-0: 0px;
+  --f-space-1: 2px;
+  --f-space-2: 4px;
+  --f-space-3: 6px;
+  --f-space-4: 8px;
+  --f-space-5: 10px;
+  --f-space-6: 12px;
+  --f-space-7: 14px;
+  --f-space-8: 16px;
+  --f-space-9: 20px;
+  --f-space-10: 24px;
+  --f-space-11: 32px;
+  --f-space-12: 40px;
+  --f-space-13: 48px;
+  --f-space-14: 64px;
+  --f-space-page: 20px;
+  --f-space-bar: 16px;
+  --f-space-section: 24px;
+  --f-space-stack: 12px;
+  --f-k: 1; --f-curve: round;
+  --f-r-tiny: calc(8px * var(--f-k));
+  --f-r-small: calc(10px * var(--f-k));
+  --f-r-chip: calc(14px * var(--f-k));
+  --f-r-control: calc(16px * var(--f-k));
+  --f-r-card: calc(22px * var(--f-k));
+  --f-r-panel: calc(26px * var(--f-k));
+  --f-r-sheet: calc(39px * var(--f-k));
+  --f-r-pill: 999px;
+  --f-radius-face: 0.3;
+  --f-size-hit: 44px;
+  --f-size-button: 56px;
+  --f-size-hold: 58px;
+  --f-size-field: 52px;
+  --f-size-glass: 40px;
+  --f-size-bar: 48px;
+  --f-size-tab-bar: 62px;
+  --f-size-check: 22px;
+  --f-size-toggle-w: 51px;
+  --f-size-toggle-h: 31px;
+  --f-size-badge: 18px;
+  --f-size-avatar-xs: 26px;
+  --f-size-avatar-s: 34px;
+  --f-size-avatar-m: 42px;
+  --f-size-avatar-l: 64px;
+  --f-size-tile: 88px;
+  --f-size-mascot-s: 24px;
+  --f-size-mascot-m: 34px;
+  --f-size-mascot-l: 96px;
+  --f-size-mascot-xl: 120px;
+  --f-border-hairline: 0.5px;
+  --f-border-line: 1px;
+  --f-border-field: 1.5px;
+  --f-border-ring: 2.5px;
+  --f-glass-blur: 20px; --f-glass-saturate: 1.6;
+  --f-opacity-disabled: 0.35;
+  --f-opacity-secondary: 0.7;
+  --f-opacity-ghost: 0.22;
+  --f-press-button: 0.97;
+  --f-press-card: 0.97;
+  --f-press-chip: 0.96;
+  --f-press-small: 0.94;
+  --f-press-lift: 1.07;
+  --f-press-target: 1.09;
+  --f-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --f-ease-overshoot: cubic-bezier(0.3, 1.4, 0.5, 1);
+  --f-ease-enter: cubic-bezier(0.2, 0.9, 0.25, 1);
+  --f-ease-exit: cubic-bezier(0.4, 0, 0.8, 0.4);
+  --f-dur-instant: 120ms;
+  --f-dur-quick: 200ms;
+  --f-dur-base: 300ms;
+  --f-dur-enter: 420ms;
+  --f-dur-exit: 300ms;
+  --f-dur-roll: 700ms;
+  --f-dur-hold: 900ms;
+  --f-dur-long-press: 450ms;
+  --f-dur-toast: 2600ms;
+  --f-dur-toast-undo: 6000ms;
+  --f-stagger: 45ms;
+  --f-ease-press: cubic-bezier(.2,.8,.2,1); --f-dur-press: 200ms;
+  --f-ease-lift: cubic-bezier(.3,1.4,.5,1); --f-dur-lift: 320ms;
+  --f-ease-pop: cubic-bezier(.3,1.5,.5,1); --f-dur-pop: 450ms;
+  --f-ease-settle: cubic-bezier(.3,1.2,.5,1); --f-dur-settle: 420ms;
+  --f-ease-page: cubic-bezier(.2,.9,.25,1); --f-dur-page: 420ms;
+  --f-z-base: 0;
+  --f-z-bar: 5;
+  --f-z-tab-bar: 20;
+  --f-z-sheet: 40;
+  --f-z-drag: 60;
+  --f-z-status: 80;
+  --f-z-toast: 90;
+  --f-z-splash: 120;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --f-ink: #F2F2F2;
+    --f-on-ink: #0B0B0B;
+    --f-canvas: #000000;
+    --f-surface: #141414;
+    --f-chip: #1E1E1E;
+    --f-chip-strong: #2B2B2B;
+    --f-line: #252525;
+    --f-line2: #3C3C3C;
+    --f-mute: #7A7A7A;
+    --f-dim: #A9A9A9;
+    --f-danger: #FF5A4F;
+    --f-glass: rgba(30,30,30,0.72);
+    --f-glass-line: rgba(255,255,255,0.09);
+    --f-hatch: rgba(255,255,255,0.14);
+    --f-scrim: rgba(0,0,0,0.5);
+    --f-shadow: #000000;
+    --f-tone-1-bg: #2A2A2A; --f-tone-1-fg: #F0F0F0;
+    --f-tone-2-bg: #3A3A3A; --f-tone-2-fg: #F0F0F0;
+    --f-tone-3-bg: #5A5A5A; --f-tone-3-fg: #FFFFFF;
+    --f-tone-4-bg: #8C8C8C; --f-tone-4-fg: #0B0B0B;
+    --f-tone-5-bg: #C4C4C4; --f-tone-5-fg: #0B0B0B;
+    --f-tone-6-bg: #EDEDED; --f-tone-6-fg: #0B0B0B;
+    --f-shadow-rest: 0 0 0 1px rgba(255,255,255,.06);
+    --f-shadow-raised: 0 0 0 1px var(--f-line);
+    --f-shadow-lifted: 0 0 0 1px var(--f-line2), 0 16px 30px -8px rgba(0,0,0,.8);
+    --f-shadow-float: 0 0 0 1px var(--f-line), 0 18px 40px -10px rgba(0,0,0,.8);
+    --f-shadow-glass: 0 6px 18px -8px rgba(0,0,0,.6);
+  }
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --f-ink: #F2F2F2;
+  --f-on-ink: #0B0B0B;
+  --f-canvas: #000000;
+  --f-surface: #141414;
+  --f-chip: #1E1E1E;
+  --f-chip-strong: #2B2B2B;
+  --f-line: #252525;
+  --f-line2: #3C3C3C;
+  --f-mute: #7A7A7A;
+  --f-dim: #A9A9A9;
+  --f-danger: #FF5A4F;
+  --f-glass: rgba(30,30,30,0.72);
+  --f-glass-line: rgba(255,255,255,0.09);
+  --f-hatch: rgba(255,255,255,0.14);
+  --f-scrim: rgba(0,0,0,0.5);
+  --f-shadow: #000000;
+  --f-tone-1-bg: #2A2A2A; --f-tone-1-fg: #F0F0F0;
+  --f-tone-2-bg: #3A3A3A; --f-tone-2-fg: #F0F0F0;
+  --f-tone-3-bg: #5A5A5A; --f-tone-3-fg: #FFFFFF;
+  --f-tone-4-bg: #8C8C8C; --f-tone-4-fg: #0B0B0B;
+  --f-tone-5-bg: #C4C4C4; --f-tone-5-fg: #0B0B0B;
+  --f-tone-6-bg: #EDEDED; --f-tone-6-fg: #0B0B0B;
+  --f-shadow-rest: 0 0 0 1px rgba(255,255,255,.06);
+  --f-shadow-raised: 0 0 0 1px var(--f-line);
+  --f-shadow-lifted: 0 0 0 1px var(--f-line2), 0 16px 30px -8px rgba(0,0,0,.8);
+  --f-shadow-float: 0 0 0 1px var(--f-line), 0 18px 40px -10px rgba(0,0,0,.8);
+  --f-shadow-glass: 0 6px 18px -8px rgba(0,0,0,.6);
+}
+/* iOS's continuous corner: a superellipse at 1.42× the radius. */
+@supports (corner-shape: superellipse(2)) {
+  :root { --f-k: 1.42; --f-curve: superellipse(1.585); }
+}
+/* The real springs, where the browser can draw them. */
+@supports (transition-timing-function: linear(0, 1)) {
+  :root {
+    --f-ease-press: linear(0, 0.0192 2.1%, 0.0695 4.2%, 0.1412 6.2%, 0.2265 8.3%, 0.3187 10.4%, 0.4128 12.5%, 0.5048 14.6%, 0.592 16.7%, 0.6723 18.8%, 0.7445 20.8%, 0.808 22.9%, 0.8626 25.0%, 0.9086 27.1%, 0.9465 29.2%, 0.9768 31.2%, 1.0004 33.3%, 1.0181 35.4%, 1.0307 37.5%, 1.039 39.6%, 1.0438 41.7%, 1.0458 43.8%, 1.0457 45.8%, 1.0439 47.9%, 1.0409 50.0%, 1.0372 52.1%, 1.033 54.2%, 1.0287 56.2%, 1.0244 58.3%, 1.0203 60.4%, 1.0165 62.5%, 1.013 64.6%, 1.0099 66.7%, 1.0073 68.8%, 1.005 70.8%, 1.0031 72.9%, 1.0016 75.0%, 1.0004 77.1%, 0.9995 79.2%, 0.9988 81.2%, 0.9983 83.3%, 0.9981 85.4%, 0.9979 87.5%, 0.9979 89.6%, 0.9979 91.7%, 0.9981 93.8%, 0.9982 95.8%, 0.9984 97.9%, 1); --f-dur-press: 393ms;
+    --f-ease-lift: linear(0, 0.0181 2.1%, 0.0657 4.2%, 0.1337 6.2%, 0.2147 8.3%, 0.3026 10.4%, 0.3926 12.5%, 0.4811 14.6%, 0.5655 16.7%, 0.6438 18.8%, 0.7148 20.8%, 0.7779 22.9%, 0.833 25.0%, 0.88 27.1%, 0.9194 29.2%, 0.9518 31.2%, 0.9777 33.3%, 0.9979 35.4%, 1.0132 37.5%, 1.0241 39.6%, 1.0315 41.7%, 1.036 43.8%, 1.0381 45.8%, 1.0383 47.9%, 1.0372 50.0%, 1.035 52.1%, 1.0322 54.2%, 1.029 56.2%, 1.0256 58.3%, 1.0221 60.4%, 1.0188 62.5%, 1.0156 64.6%, 1.0127 66.7%, 1.0101 68.8%, 1.0078 70.8%, 1.0057 72.9%, 1.004 75.0%, 1.0026 77.1%, 1.0015 79.2%, 1.0006 81.2%, 0.9999 83.3%, 0.9993 85.4%, 0.999 87.5%, 0.9987 89.6%, 0.9986 91.7%, 0.9985 93.8%, 0.9985 95.8%, 0.9986 97.9%, 1); --f-dur-lift: 489ms;
+    --f-ease-pop: linear(0, 0.0261 2.1%, 0.0941 4.2%, 0.1901 6.2%, 0.3025 8.3%, 0.4214 10.4%, 0.5394 12.5%, 0.6508 14.6%, 0.7517 16.7%, 0.8397 18.8%, 0.9137 20.8%, 0.9735 22.9%, 1.0196 25.0%, 1.0532 27.1%, 1.0758 29.2%, 1.0889 31.2%, 1.0944 33.3%, 1.0938 35.4%, 1.0886 37.5%, 1.0804 39.6%, 1.0702 41.7%, 1.0591 43.8%, 1.0478 45.8%, 1.0369 47.9%, 1.027 50.0%, 1.0181 52.1%, 1.0106 54.2%, 1.0045 56.2%, 0.9996 58.3%, 0.996 60.4%, 0.9935 62.5%, 0.9919 64.6%, 0.9912 66.7%, 0.991 68.8%, 0.9914 70.8%, 0.9921 72.9%, 0.993 75.0%, 0.994 77.1%, 0.9951 79.2%, 0.9961 81.2%, 0.9971 83.3%, 0.998 85.4%, 0.9987 87.5%, 0.9994 89.6%, 0.9999 91.7%, 1.0003 93.8%, 1.0005 95.8%, 1.0007 97.9%, 1); --f-dur-pop: 696ms;
+    --f-ease-settle: linear(0, 0.0155 2.1%, 0.0561 4.2%, 0.1144 6.2%, 0.1842 8.3%, 0.2607 10.4%, 0.3398 12.5%, 0.4186 14.6%, 0.4949 16.7%, 0.567 18.8%, 0.6338 20.8%, 0.6947 22.9%, 0.7494 25.0%, 0.7978 27.1%, 0.84 29.2%, 0.8764 31.2%, 0.9074 33.3%, 0.9333 35.4%, 0.9547 37.5%, 0.9721 39.6%, 0.986 41.7%, 0.9968 43.8%, 1.005 45.8%, 1.011 47.9%, 1.0152 50.0%, 1.0179 52.1%, 1.0194 54.2%, 1.0199 56.2%, 1.0197 58.3%, 1.019 60.4%, 1.0179 62.5%, 1.0166 64.6%, 1.0151 66.7%, 1.0135 68.8%, 1.0119 70.8%, 1.0104 72.9%, 1.0089 75.0%, 1.0076 77.1%, 1.0063 79.2%, 1.0052 81.2%, 1.0042 83.3%, 1.0034 85.4%, 1.0026 87.5%, 1.002 89.6%, 1.0014 91.7%, 1.001 93.8%, 1.0006 95.8%, 1.0003 97.9%, 1); --f-dur-settle: 634ms;
+    --f-ease-page: linear(0, 0.0127 2.1%, 0.0462 4.2%, 0.0945 6.2%, 0.1527 8.3%, 0.2169 10.4%, 0.2841 12.5%, 0.3518 14.6%, 0.4183 16.7%, 0.4823 18.8%, 0.5429 20.8%, 0.5994 22.9%, 0.6515 25.0%, 0.6991 27.1%, 0.742 29.2%, 0.7805 31.2%, 0.8147 33.3%, 0.8448 35.4%, 0.8712 37.5%, 0.8941 39.6%, 0.9138 41.7%, 0.9307 43.8%, 0.945 45.8%, 0.9571 47.9%, 0.9673 50.0%, 0.9756 52.1%, 0.9825 54.2%, 0.9881 56.2%, 0.9926 58.3%, 0.9961 60.4%, 0.9988 62.5%, 1.0009 64.6%, 1.0025 66.7%, 1.0036 68.8%, 1.0043 70.8%, 1.0048 72.9%, 1.005 75.0%, 1.005 77.1%, 1.0049 79.2%, 1.0047 81.2%, 1.0045 83.3%, 1.0042 85.4%, 1.0039 87.5%, 1.0035 89.6%, 1.0032 91.7%, 1.0029 93.8%, 1.0025 95.8%, 1.0022 97.9%, 1); --f-dur-page: 639ms;
+  }
+}
+
+/* ==========================================================================
+   folks design system · components
+   Hand-written. build.py puts the generated tokens (variables) above this
+   and writes the result to dist/folks.css. Classes start with f-, states
+   with is-, variants with --. Everything reads tokens; no raw values that
+   a token already names.
+   ========================================================================== */
+
+/* ---------- base ---------- */
+
+.f, .f *, .f *::before, .f *::after { box-sizing: border-box; }
+.f {
+  font-family: var(--f-font-ui);
+  font-size: var(--f-text-body-size);
+  line-height: var(--f-text-body-lh);
+  color: var(--f-ink);
+  background: var(--f-canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.f :where(button) { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.f :where(input, textarea) { font: inherit; color: inherit; }
+.f :where(:focus-visible) { outline: var(--f-border-field) solid var(--f-ink); outline-offset: 3px; }
+.f ::selection { background: var(--f-ink); color: var(--f-on-ink); }
+.f:lang(ar), .f :lang(ar) { font-family: var(--f-font-arabic); }
+.f:lang(ja), .f :lang(ja) { font-family: var(--f-font-ja); }
+.f:lang(ko), .f :lang(ko) { font-family: var(--f-font-ko); }
+
+/* ---------- type ---------- */
+
+.f-amount   { font-size: var(--f-text-amount-size);   font-weight: var(--f-text-amount-weight);   line-height: var(--f-text-amount-lh);   letter-spacing: var(--f-text-amount-track); font-variant-numeric: tabular-nums; }
+.f-display  { font-size: var(--f-text-display-size);  font-weight: var(--f-text-display-weight);  line-height: var(--f-text-display-lh);  letter-spacing: var(--f-text-display-track); }
+.f-title    { font-size: var(--f-text-title-size);    font-weight: var(--f-text-title-weight);    line-height: var(--f-text-title-lh); }
+.f-title2   { font-size: var(--f-text-title2-size);   font-weight: var(--f-text-title2-weight);   line-height: var(--f-text-title2-lh); }
+.f-title3   { font-size: var(--f-text-title3-size);   font-weight: var(--f-text-title3-weight);   line-height: var(--f-text-title3-lh); }
+.f-headline { font-size: var(--f-text-headline-size); font-weight: var(--f-text-headline-weight); line-height: var(--f-text-headline-lh); }
+.f-body     { font-size: var(--f-text-body-size);     font-weight: var(--f-text-body-weight);     line-height: var(--f-text-body-lh); }
+.f-callout  { font-size: var(--f-text-callout-size);  line-height: var(--f-text-callout-lh); }
+.f-subhead  { font-size: var(--f-text-subheadline-size); line-height: var(--f-text-subheadline-lh); }
+.f-footnote { font-size: var(--f-text-footnote-size); line-height: var(--f-text-footnote-lh); }
+.f-caption  { font-size: var(--f-text-caption-size);  line-height: var(--f-text-caption-lh); }
+.f-caption2 { font-size: var(--f-text-caption2-size); line-height: var(--f-text-caption2-lh); letter-spacing: var(--f-text-caption2-track); }
+.f-mute { color: var(--f-mute); }
+.f-dim  { color: var(--f-dim); }
+.f-num  { font-variant-numeric: tabular-nums; }
+.f-strong { font-weight: var(--f-weight-semibold); }
+.f-bold { font-weight: var(--f-weight-bold); }
+.f-mono { font-family: var(--f-font-mono); }
+
+/* Section label: "At the table      3" */
+.f-label {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--f-space-6);
+  font-size: var(--f-text-footnote-size); font-weight: var(--f-weight-semibold); color: var(--f-mute);
+  margin: 0 var(--f-space-1) var(--f-space-4);
+}
+.f-label > :last-child:not(:first-child) { font-weight: var(--f-weight-regular); font-variant-numeric: tabular-nums; }
+
+/* ---------- buttons ---------- */
+
+/* The one filled button per screen. Ink is the only highlight. */
+.f-btn {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; align-items: center; justify-content: center; gap: var(--f-space-4);
+  width: 100%; min-height: var(--f-size-button); padding: 0 var(--f-space-9);
+  border-radius: var(--f-r-control); corner-shape: var(--f-curve);
+  background: var(--f-ink); color: var(--f-on-ink);
+  font-size: var(--f-text-headline-size); font-weight: var(--f-text-headline-weight);
+  transition: transform var(--f-dur-press) var(--f-ease-press), opacity var(--f-dur-quick) var(--f-ease-out), background var(--f-dur-quick);
+  user-select: none; -webkit-user-select: none;
+}
+.f-btn:active:not(:disabled) { transform: scale(var(--f-press-button)); }
+.f-btn:disabled, .f-btn[aria-disabled="true"] { opacity: var(--f-opacity-disabled); cursor: default; }
+.f-btn--secondary { background: none; color: var(--f-ink); box-shadow: inset 0 0 0 var(--f-border-field) var(--f-ink); }
+.f-btn--quiet { background: var(--f-chip); color: var(--f-ink); }
+.f-btn--split { justify-content: space-between; }
+.f-btn--split > :last-child { font-variant-numeric: tabular-nums; }
+
+/* A button that is its own progress bar: set --p from 0 to 1 while it works.
+   The filled part inverts what's under it, so the label stays readable. */
+.f-btn.is-working::after, .f-hold::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: #fff; mix-blend-mode: difference;
+  transform: scaleX(var(--p, 0)); transform-origin: left center;
+}
+[dir="rtl"] .f-btn.is-working::after, [dir="rtl"] .f-hold::after { transform-origin: right center; }
+.f-btn.is-working::after { transition: transform var(--f-dur-base) var(--f-ease-out); }
+.f-btn .f-btn__state { display: inline-flex; align-items: center; gap: var(--f-space-4); animation: f-swap var(--f-dur-settle) var(--f-ease-settle) both; }
+
+/* Hold to confirm: fills while held instead of asking "are you sure?" (folks.js wires it). */
+.f-hold {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; height: var(--f-size-hold);
+  border-radius: var(--f-r-control); corner-shape: var(--f-curve);
+  background: var(--f-ink); color: var(--f-on-ink);
+  font-size: var(--f-text-headline-size); font-weight: var(--f-text-headline-weight);
+  touch-action: none; user-select: none; -webkit-user-select: none;
+  transition: transform var(--f-dur-press) var(--f-ease-press);
+}
+.f-hold.is-pressing { transform: scale(var(--f-press-button)); }
+.f-hold:not(.is-pressing)::after { transition: transform 350ms var(--f-ease-out); }
+
+/* Small capsule actions ("Split", filters). */
+.f-capsule {
+  display: inline-flex; align-items: center; gap: var(--f-space-3);
+  padding: 7px var(--f-space-7); border-radius: var(--f-r-pill);
+  box-shadow: inset 0 0 0 1.4px var(--f-ink); color: var(--f-ink);
+  font-size: var(--f-text-subheadline-size); font-weight: var(--f-weight-semibold);
+  transition: background var(--f-dur-quick), color var(--f-dur-quick), transform var(--f-dur-press) var(--f-ease-press);
+}
+.f-capsule.is-on, .f-capsule[aria-pressed="true"] { background: var(--f-ink); color: var(--f-on-ink); }
+.f-capsule:active { transform: scale(var(--f-press-small)); }
+
+/* A word that acts. */
+.f-link { align-self: center; padding: var(--f-space-4); font-size: var(--f-text-subheadline-size); font-weight: var(--f-weight-semibold); color: var(--f-dim); }
+.f-link--strong { color: var(--f-ink); }
+.f-link--danger { color: var(--f-danger); }
+
+/* Round icon button inside content. */
+.f-ibtn { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 50%; background: var(--f-chip); color: var(--f-ink); transition: transform var(--f-dur-press) var(--f-ease-press); }
+.f-ibtn:active { transform: scale(var(--f-press-small)); }
+
+/* ---------- glass chrome ---------- */
+
+.f-glass {
+  background: var(--f-glass);
+  -webkit-backdrop-filter: blur(var(--f-glass-blur)) saturate(var(--f-glass-saturate));
+  backdrop-filter: blur(var(--f-glass-blur)) saturate(var(--f-glass-saturate));
+  box-shadow: 0 0 0 var(--f-border-hairline) var(--f-glass-line), var(--f-shadow-glass);
+}
+/* A glass capsule for top bars ("‹ Receipts", "Edit", "Cancel"); --icon makes it a circle. */
+.f-gbtn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--f-space-3);
+  height: var(--f-size-glass); min-width: var(--f-size-glass); padding: 0 var(--f-space-7);
+  border-radius: var(--f-r-pill);
+  font-size: var(--f-text-callout-size); font-weight: var(--f-weight-medium);
+  transition: transform var(--f-dur-press) var(--f-ease-press);
+}
+.f-gbtn--icon { padding: 0; width: var(--f-size-glass); }
+.f-gbtn:active { transform: scale(var(--f-press-small)); }
+
+/* ---------- bars ---------- */
+
+.f-bar { position: relative; height: var(--f-size-bar); display: flex; align-items: center; justify-content: space-between; gap: var(--f-space-4); padding: 0 var(--f-space-bar); }
+.f-bar__title { position: absolute; inset-inline: 68px; text-align: center; font-size: var(--f-text-headline-size); font-weight: var(--f-weight-semibold); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+.f-large-title { font-size: var(--f-text-display-size); font-weight: var(--f-text-display-weight); letter-spacing: var(--f-text-display-track); line-height: var(--f-text-display-lh); padding: 2px var(--f-space-page) var(--f-space-4); margin: 0; }
+
+/* Floating glass tab bar. */
+.f-tabbar { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; height: var(--f-size-tab-bar); padding: 5px; border-radius: var(--f-r-pill); }
+.f-tab { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border-radius: var(--f-r-pill); color: var(--f-mute); font-size: 10px; font-weight: var(--f-weight-semibold); transition: color var(--f-dur-base), background var(--f-dur-base), transform var(--f-dur-press) var(--f-ease-press); }
+.f-tab.is-on, .f-tab[aria-selected="true"] { color: var(--f-ink); background: var(--f-chip); }
+.f-tab:active { transform: scale(0.95); }
+
+/* The pick bar: "2 picked   Edit  Remove  Clear" on glass. */
+.f-pickbar { display: flex; align-items: center; gap: var(--f-space-3); padding: var(--f-space-3) var(--f-space-3) var(--f-space-3) var(--f-space-8); border-radius: var(--f-r-pill); font-size: var(--f-text-subheadline-size); }
+[dir="rtl"] .f-pickbar { padding: var(--f-space-3) var(--f-space-8) var(--f-space-3) var(--f-space-3); }
+.f-pickbar > span { flex: 1; }
+.f-pickbar button { padding: var(--f-space-4) 13px; border-radius: var(--f-r-pill); font-weight: var(--f-weight-semibold); }
+.f-pickbar button:active { background: var(--f-chip); }
+
+/* ---------- fields ---------- */
+
+.f-field {
+  width: 100%; min-height: var(--f-size-field); padding: var(--f-space-7) var(--f-space-8);
+  border: 0; outline: 0; border-radius: var(--f-r-control); corner-shape: var(--f-curve);
+  background: var(--f-surface); color: var(--f-ink);
+  box-shadow: inset 0 0 0 var(--f-border-field) var(--f-line2);
+  font-size: var(--f-text-body-size);
+  transition: box-shadow var(--f-dur-quick) var(--f-ease-out);
+}
+.f-field::placeholder { color: var(--f-mute); }
+.f-field:focus { box-shadow: inset 0 0 0 var(--f-border-field) var(--f-ink); }
+.f-field--big { font-size: var(--f-text-title3-size); font-weight: var(--f-text-title3-weight); }
+.f-field.is-error { box-shadow: inset 0 0 0 var(--f-border-field) var(--f-ink); }
+.f-hint { min-height: 20px; margin: var(--f-space-2) var(--f-space-1) 0; font-size: var(--f-text-footnote-size); color: var(--f-dim); }
+.f-addrow { display: flex; gap: var(--f-space-4); }
+.f-addrow > .f-plus { width: var(--f-size-field); height: var(--f-size-field); flex: none; display: grid; place-items: center; border-radius: var(--f-r-control); corner-shape: var(--f-curve); background: var(--f-ink); color: var(--f-on-ink); transition: transform var(--f-dur-press) var(--f-ease-press); }
+.f-addrow > .f-plus:active { transform: scale(var(--f-press-small)); }
+/* A number that converts as you type, shown under or beside the field. */
+.f-echo { font-size: var(--f-text-footnote-size); color: var(--f-dim); font-variant-numeric: tabular-nums; min-height: 18px; }
+
+/* ---------- switch, segmented, check ---------- */
+
+/* A gray track that turns ink when on; the knob stretches while pressed. Use role="switch" aria-checked. */
+.f-toggle { position: relative; flex: none; width: var(--f-size-toggle-w); height: var(--f-size-toggle-h); border-radius: var(--f-r-pill); background: var(--f-line2); transition: background var(--f-dur-base); }
+.f-toggle::before { content: ""; position: absolute; top: 2px; inset-inline-start: 2px; width: 27px; height: 27px; border-radius: var(--f-r-pill); background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.2); transition: inset-inline-start var(--f-dur-settle) var(--f-ease-settle), width var(--f-dur-quick) var(--f-ease-out); }
+.f-toggle:active::before { width: 33px; }
+.f-toggle[aria-checked="true"], .f-toggle.is-on { background: var(--f-ink); }
+.f-toggle[aria-checked="true"]::before, .f-toggle.is-on::before { inset-inline-start: 22px; background: var(--f-on-ink); }
+.f-toggle[aria-checked="true"]:active::before, .f-toggle.is-on:active::before { inset-inline-start: 16px; }
+
+/* Segmented control. The thumb is positioned by folks.js (or by --i / --n in CSS). */
+.f-seg { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 2px; border-radius: var(--f-r-small); corner-shape: var(--f-curve); background: var(--f-chip); }
+.f-seg > button { position: relative; z-index: 1; padding: 7px var(--f-space-2); font-size: 14px; font-weight: var(--f-weight-semibold); }
+.f-seg__thumb { position: absolute; top: 2px; bottom: 2px; inset-inline-start: calc(2px + (100% - 4px) / var(--n, 2) * var(--i, 0)); width: calc((100% - 4px) / var(--n, 2)); border-radius: var(--f-r-tiny); corner-shape: var(--f-curve); background: var(--f-surface); box-shadow: 0 2px 6px rgba(0,0,0,.12); transition: inset-inline-start var(--f-dur-lift) var(--f-ease-lift); }
+[data-theme="dark"] .f-seg__thumb { background: #4a4a4a; }
+/* The luxurious variant: an ink thumb that inverts the labels it passes under. */
+.f-seg--exclusion .f-seg__thumb { z-index: 2; background: #fff; mix-blend-mode: difference; box-shadow: none; }
+.f-seg--exclusion { background: var(--f-chip); }
+
+.f-check { flex: none; width: var(--f-size-check); height: var(--f-size-check); display: inline-grid; place-items: center; border-radius: var(--f-r-tiny); corner-shape: var(--f-curve); box-shadow: inset 0 0 0 1.6px color-mix(in srgb, var(--f-ink) 55%, transparent); color: var(--f-on-ink); transition: background var(--f-dur-quick); }
+.f-check.is-on, .f-check[aria-checked="true"] { background: var(--f-ink); box-shadow: none; }
+.f-check > svg { width: 13px; height: 13px; opacity: 0; transform: scale(.4); transition: opacity var(--f-dur-quick), transform var(--f-dur-pop) var(--f-ease-pop); }
+.f-check.is-on > svg, .f-check[aria-checked="true"] > svg { opacity: 1; transform: none; }
+
+/* ---------- chips ---------- */
+
+.f-flow { display: flex; flex-wrap: wrap; gap: var(--f-space-5) var(--f-space-4); }
+.f-chip {
+  display: inline-flex; align-items: center; gap: var(--f-space-4); max-width: 100%;
+  padding: var(--f-space-5) var(--f-space-5) var(--f-space-5) var(--f-space-7);
+  border-radius: var(--f-r-chip); corner-shape: var(--f-curve);
+  background: var(--f-chip); color: var(--f-ink);
+  font-size: var(--f-text-subheadline-size);
+  transition: background var(--f-dur-quick), box-shadow var(--f-dur-quick), transform var(--f-dur-lift) var(--f-ease-lift), opacity var(--f-dur-instant);
+  touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab;
+}
+[dir="rtl"] .f-chip { padding: var(--f-space-5) var(--f-space-7) var(--f-space-5) var(--f-space-5); }
+.f-chip__name { font-weight: var(--f-weight-semibold); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.f-chip__price { color: var(--f-dim); font-variant-numeric: tabular-nums; flex: none; }
+.f-chip.is-picked { background: var(--f-chip-strong); box-shadow: inset 0 0 0 var(--f-border-field) var(--f-ink); }
+.f-chip.is-lifted { background: var(--f-surface); box-shadow: 0 0 0 1px var(--f-line2), var(--f-shadow-lifted); transform: scale(var(--f-press-lift)); cursor: grabbing; }
+.f-chip.is-ghost { opacity: 0; }
+.f-chip.is-in { animation: f-pop-in var(--f-dur-pop) var(--f-ease-pop) both; animation-delay: calc(var(--i, 0) * var(--f-stagger)); }
+.f-chip--add { background: none; color: var(--f-dim); font-weight: var(--f-weight-semibold); gap: var(--f-space-3); padding: 11px var(--f-space-7); border: 1.4px dashed var(--f-line2); cursor: pointer; }
+.f-chip--add:active { transform: scale(var(--f-press-chip)); }
+/* The count on a stack of lifted things. */
+.f-stack-n { min-width: 24px; height: 24px; padding: 0 7px; display: inline-grid; place-items: center; border-radius: var(--f-r-pill); background: var(--f-ink); color: var(--f-on-ink); font-size: var(--f-text-footnote-size); font-weight: var(--f-weight-heavy); box-shadow: 0 0 0 2px var(--f-canvas); }
+
+/* ---------- people ---------- */
+
+/* A face: a squircle at 30% of its side, the initial in rounded type. Set --s (px) and data-tone 1–6. */
+.f-avatar {
+  --s: var(--f-size-avatar-m);
+  position: relative; flex: none; overflow: hidden;
+  width: var(--s); height: var(--s); display: grid; place-items: center;
+  border-radius: calc(var(--s) * var(--f-radius-face) * var(--f-k)); corner-shape: var(--f-curve);
+  background: var(--f-tone-1-bg); color: var(--f-tone-1-fg);
+  font-family: var(--f-font-rounded); font-weight: var(--f-weight-semibold); font-size: calc(var(--s) * .42); line-height: 1;
+}
+.f-avatar::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, rgba(255,255,255,.2), transparent 50%); mix-blend-mode: soft-light; pointer-events: none; }
+.f-avatar > img { width: 100%; height: 100%; object-fit: cover; }
+.f-avatar--round { border-radius: 50%; corner-shape: round; }
+.f-avatar[data-tone="2"] { background: var(--f-tone-2-bg); color: var(--f-tone-2-fg); }
+.f-avatar[data-tone="3"] { background: var(--f-tone-3-bg); color: var(--f-tone-3-fg); }
+.f-avatar[data-tone="4"] { background: var(--f-tone-4-bg); color: var(--f-tone-4-fg); }
+.f-avatar[data-tone="5"] { background: var(--f-tone-5-bg); color: var(--f-tone-5-fg); }
+.f-avatar[data-tone="6"] { background: var(--f-tone-6-bg); color: var(--f-tone-6-fg); }
+/* Overlapping faces for a group. */
+.f-faces { display: flex; }
+.f-faces > .f-avatar { box-shadow: 0 0 0 2px var(--f-canvas); }
+.f-faces > .f-avatar + .f-avatar { margin-inline-start: calc(var(--s) * -0.28); }
+
+/* A person on a grid: face, name, what they have so far. */
+.f-tile { position: relative; display: flex; flex-direction: column; align-items: center; gap: 7px; cursor: pointer; }
+.f-tile__face { position: relative; transition: transform var(--f-dur-lift) var(--f-ease-lift); }
+.f-tile__face > .f-avatar { --s: var(--f-size-tile); box-shadow: var(--f-shadow-rest); transition: box-shadow var(--f-dur-base); }
+.f-tile__ring { position: absolute; inset: 0; border-radius: calc(var(--f-size-tile) * var(--f-radius-face) * var(--f-k)); corner-shape: var(--f-curve); pointer-events: none; outline: var(--f-border-ring) solid transparent; outline-offset: calc(var(--f-border-ring) * -1); transition: outline-color var(--f-dur-quick), outline-offset var(--f-dur-pop) var(--f-ease-pop), box-shadow var(--f-dur-base); }
+.f-tile__name { max-width: 100%; font-size: var(--f-text-subheadline-size); color: var(--f-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: color var(--f-dur-quick); }
+.f-tile.is-target .f-tile__face { transform: scale(var(--f-press-target)); }
+.f-tile.is-target .f-tile__face > .f-avatar { box-shadow: var(--f-shadow-lifted); }
+.f-tile.is-target:not(.is-selected) .f-tile__ring { box-shadow: inset 0 0 0 var(--f-border-ring) var(--f-ink); }
+.f-tile.is-target .f-tile__name { color: var(--f-ink); }
+/* Picked: a lit outline just outside the face. */
+.f-tile.is-selected .f-tile__ring { outline-color: var(--f-ink); outline-offset: var(--f-border-ring); box-shadow: 0 0 20px 2px color-mix(in srgb, var(--f-ink) 40%, transparent); }
+.f-tile > .f-tile__face > .f-badge { position: absolute; inset-inline-start: -6px; top: -11px; z-index: 2; }
+
+/* Count + amount, ink on the canvas: "② 245". */
+.f-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px 3px 3px; border-radius: var(--f-r-pill); background: var(--f-ink); color: var(--f-on-ink); font-size: var(--f-text-caption-size); font-weight: var(--f-weight-bold); font-variant-numeric: tabular-nums; white-space: nowrap; box-shadow: 0 3px 6px rgba(0,0,0,.18); animation: f-pop-in var(--f-dur-pop) var(--f-ease-pop) both; }
+[dir="rtl"] .f-badge { padding: 3px 3px 3px 9px; }
+.f-count { min-width: var(--f-size-badge); height: var(--f-size-badge); padding: 0 4px; display: inline-grid; place-items: center; border-radius: var(--f-r-pill); background: var(--f-on-ink); color: var(--f-ink); font-size: var(--f-text-caption2-size); font-weight: var(--f-weight-heavy); }
+
+/* A total on ink. */
+.f-pill { display: inline-flex; align-items: center; padding: 6px var(--f-space-6); border-radius: var(--f-r-pill); background: var(--f-ink); color: var(--f-on-ink); font-size: var(--f-text-subheadline-size); font-weight: var(--f-weight-bold); font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Quiet tag: a word on chip gray. */
+.f-tag { display: inline-flex; align-items: center; gap: var(--f-space-2); padding: 3px var(--f-space-4); border-radius: var(--f-r-pill); background: var(--f-chip); color: var(--f-dim); font-size: var(--f-text-caption-size); font-weight: var(--f-weight-semibold); }
+
+/* ---------- surfaces ---------- */
+
+.f-card { background: var(--f-surface); border-radius: var(--f-r-card); corner-shape: var(--f-curve); box-shadow: inset 0 0 0 1px var(--f-line); overflow: hidden; }
+.f-row { display: flex; align-items: center; justify-content: space-between; gap: var(--f-space-6); min-height: var(--f-size-field); padding: 15px var(--f-space-8); }
+.f-row + .f-row { border-top: var(--f-border-line) solid var(--f-line); }
+.f-row__sub { display: block; font-size: var(--f-text-footnote-size); color: var(--f-mute); }
+button.f-row { width: 100%; text-align: start; transition: background var(--f-dur-quick); }
+button.f-row:active { background: var(--f-chip); }
+
+/* Big option card: an icon tile, a title, a line, a chevron. --fill is the one leading choice. */
+.f-option { display: flex; align-items: center; gap: var(--f-space-7); width: 100%; padding: var(--f-space-7); border-radius: var(--f-r-card); corner-shape: var(--f-curve); background: var(--f-surface); box-shadow: inset 0 0 0 1px var(--f-line); text-align: start; transition: transform var(--f-dur-press) var(--f-ease-press); }
+.f-option:active { transform: scale(var(--f-press-card)); }
+.f-option__icon { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border-radius: calc((22px - 14px) * var(--f-k)); corner-shape: var(--f-curve); background: var(--f-chip); }
+.f-option__text { flex: 1; min-width: 0; }
+.f-option__text b { display: block; font-size: var(--f-text-body-size); }
+.f-option__text small { display: block; margin-top: 2px; font-size: var(--f-text-footnote-size); opacity: var(--f-opacity-secondary); }
+.f-option--fill { background: var(--f-ink); color: var(--f-on-ink); box-shadow: none; }
+.f-option--fill .f-option__icon { background: color-mix(in srgb, var(--f-on-ink) 14%, transparent); }
+
+/* Lines. */
+.f-dash { height: 0; border: 0; border-top: var(--f-border-line) dashed var(--f-line2); margin: 0; }
+.f-divider { height: 0; border: 0; border-top: var(--f-border-line) solid var(--f-line); margin: 0; }
+/* A receipt's torn edge, at the bottom of a card that holds a bill. */
+.f-perforated { --tooth: 14px; padding-bottom: 28px; -webkit-mask: radial-gradient(circle at 50% 100%, transparent 5px, #000 5.5px) 0 100% / var(--tooth) 12px repeat-x, linear-gradient(#000, #000) top / 100% calc(100% - 11px) no-repeat; mask: radial-gradient(circle at 50% 100%, transparent 5px, #000 5.5px) 0 100% / var(--tooth) 12px repeat-x, linear-gradient(#000, #000) top / 100% calc(100% - 11px) no-repeat; }
+/* Diagonal stripes: disabled, canceled, urgent. Readable without color. */
+.f-hatch { background-image: repeating-linear-gradient(135deg, var(--f-hatch) 0 2px, transparent 2px 7px); }
+
+/* ---------- sheet, menu, toast ---------- */
+
+.f-scrim { position: fixed; inset: 0; z-index: var(--f-z-sheet); background: var(--f-scrim); animation: f-fade var(--f-dur-base) both; }
+.f-sheet { position: fixed; inset-inline: 8px; bottom: 8px; z-index: calc(var(--f-z-sheet) + 1); max-height: 94vh; display: flex; flex-direction: column; overflow: hidden; border-radius: var(--f-r-sheet); corner-shape: var(--f-curve); background: var(--f-canvas); color: var(--f-ink); animation: f-sheet-in var(--f-dur-page) var(--f-ease-page) both; }
+.f-sheet.is-out { animation: f-sheet-out var(--f-dur-exit) var(--f-ease-exit) both; }
+.f-scrim.is-out { animation: f-fade-out var(--f-dur-exit) both; }
+.f-grab { flex: none; width: 36px; height: 5px; margin: 7px auto 0; border-radius: 5px; background: var(--f-line2); }
+.f-sheet__bar { display: flex; align-items: center; justify-content: space-between; min-height: var(--f-size-bar); padding: var(--f-space-4) var(--f-space-bar) var(--f-space-2); }
+.f-sheet__body { padding: 0 var(--f-space-page) var(--f-space-9); overflow: auto; }
+
+.f-menu { min-width: 200px; overflow: hidden; border-radius: var(--f-r-control); corner-shape: var(--f-curve); background: var(--f-glass); -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px); box-shadow: 0 0 0 var(--f-border-hairline) var(--f-glass-line), var(--f-shadow-float); transform-origin: top left; animation: f-menu-in 260ms var(--f-ease-overshoot) both; }
+.f-menu > button { display: flex; align-items: center; justify-content: space-between; gap: var(--f-space-6); width: 100%; padding: var(--f-space-6) var(--f-space-8); font-size: var(--f-text-callout-size); text-align: start; }
+.f-menu > button + button { border-top: var(--f-border-hairline) solid var(--f-glass-line); }
+.f-menu > button:active { background: var(--f-chip); }
+.f-menu > .is-danger { color: var(--f-danger); }
+
+/* An ink capsule that says what happened, with Undo where it can be taken back. */
+.f-toast { display: inline-flex; align-items: center; gap: var(--f-space-7); max-width: calc(100% - 40px); padding: var(--f-space-6) var(--f-space-9); border-radius: var(--f-r-pill); background: var(--f-ink); color: var(--f-on-ink); font-size: var(--f-text-subheadline-size); font-weight: var(--f-weight-medium); box-shadow: 0 12px 30px -10px rgba(0,0,0,.45); animation: f-toast-in var(--f-dur-page) var(--f-ease-pop) both; }
+.f-toast.is-out { animation: f-toast-out var(--f-dur-exit) var(--f-ease-exit) both; }
+.f-toast > button { margin-inline-end: -10px; padding: 4px var(--f-space-6); border-radius: var(--f-r-pill); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--f-on-ink) 40%, transparent); font-weight: var(--f-weight-bold); color: var(--f-on-ink); }
+.f-toasts { position: fixed; left: 50%; bottom: 28px; z-index: var(--f-z-toast); transform: translateX(-50%); display: grid; justify-items: center; gap: var(--f-space-4); pointer-events: none; width: max-content; max-width: calc(100vw - 32px); }
+.f-toasts > * { pointer-events: auto; }
+
+/* ---------- status, loading, feedback ---------- */
+
+/* Status by shape and label, motion as severity: a pulse means "in progress", stillness means "final". */
+.f-status { display: inline-flex; align-items: center; gap: 7px; font-size: var(--f-text-footnote-size); color: var(--f-dim); }
+.f-status > i { position: relative; width: 9px; height: 9px; flex: none; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--f-ink); }
+.f-status[data-state="active"] > i { background: radial-gradient(circle, var(--f-ink) 0 2.2px, transparent 2.6px); }
+.f-status[data-state="active"] > i::after { content: ""; position: absolute; inset: -1px; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--f-ink); animation: f-pulse 1.4s var(--f-ease-out) infinite; }
+.f-status[data-state="done"] > i { background: var(--f-ink); }
+.f-status[data-state="final"] > i { background: var(--f-ink); box-shadow: none; display: grid; place-items: center; }
+.f-status[data-state="final"] > i::after { content: ""; width: 4px; height: 2px; border: solid var(--f-on-ink); border-width: 0 0 1.4px 1.4px; transform: translateY(-1px) rotate(-45deg); }
+.f-status[data-state="canceled"] > i { box-shadow: inset 0 0 0 1.5px var(--f-mute); background-image: repeating-linear-gradient(135deg, var(--f-mute) 0 1.2px, transparent 1.2px 3px); }
+.f-status[data-state="canceled"] { color: var(--f-mute); text-decoration: line-through; }
+
+/* A skeleton is the size of what it becomes. */
+.f-skeleton { display: inline-block; border-radius: 6px; background: linear-gradient(100deg, var(--f-chip) 30%, var(--f-chip-strong) 50%, var(--f-chip) 70%) 0 0 / 250% 100%; animation: f-shimmer 1.4s linear infinite; color: transparent !important; user-select: none; }
+
+.f-dots { display: inline-flex; gap: 5px; }
+.f-dots > i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; animation: f-dot 1.1s infinite; }
+.f-dots > i:nth-child(2) { animation-delay: .18s; }
+.f-dots > i:nth-child(3) { animation-delay: .36s; }
+
+/* Done: an ink circle that pops, then the check draws itself. */
+.f-done { display: inline-block; animation: f-pop-in 550ms var(--f-ease-pop) both; }
+.f-done circle { fill: var(--f-ink); }
+.f-done path { fill: none; stroke: var(--f-on-ink); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 60; stroke-dashoffset: 60; animation: f-draw 400ms 250ms var(--f-ease-out) forwards; }
+
+/* Hidden value: blurred, not starred. Hover or focus to read. */
+.f-secret { filter: blur(5px); transition: filter var(--f-dur-base) var(--f-ease-out); cursor: pointer; }
+.f-secret:hover, .f-secret:focus, .f-secret.is-shown { filter: none; }
+
+/* Rolling digits (folks.js builds the strips). */
+.f-roll { display: inline-flex; direction: ltr; font-variant-numeric: tabular-nums; vertical-align: bottom; }
+.f-roll__d { display: inline-block; height: 1.2em; overflow: hidden; }
+.f-roll__s { display: flex; flex-direction: column; transition: transform var(--f-dur-roll) var(--f-ease-out); }
+.f-roll__s > span, .f-roll__sep { height: 1.2em; line-height: 1.2em; text-align: center; }
+
+/* A card that opens in place: it grows to fit what's inside. */
+.f-reveal { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--f-dur-settle) var(--f-ease-settle); }
+.f-reveal.is-open { grid-template-rows: 1fr; }
+.f-reveal > * { overflow: hidden; min-height: 0; }
+
+/* Empty: the mascot, one sentence, one action. */
+.f-empty { display: grid; justify-items: center; gap: var(--f-space-6); padding: var(--f-space-11) var(--f-space-page); text-align: center; color: var(--f-dim); }
+.f-empty > b { color: var(--f-ink); font-size: var(--f-text-headline-size); }
+
+/* Motion utilities (folks.js toggles them; they can also be added by hand). */
+.f-shake { animation: f-shake 420ms var(--f-ease-out); }
+.f-bounce { animation: f-bounce 600ms var(--f-ease-overshoot); }
+.f-pop-in { animation: f-pop-in var(--f-dur-pop) var(--f-ease-pop) both; }
+.f-soft-in { animation: f-soft-in 1.1s var(--f-ease-out) both; }
+.f-rise { animation: f-rise var(--f-dur-enter) var(--f-ease-enter) both; animation-delay: calc(var(--i, 0) * var(--f-stagger)); }
+.f-press { transition: transform var(--f-dur-press) var(--f-ease-press); }
+.f-press:active { transform: scale(var(--f-press-chip)); }
+
+/* ---------- keyframes ---------- */
+
+@keyframes f-fade { from { opacity: 0; } }
+@keyframes f-fade-out { to { opacity: 0; } }
+@keyframes f-pop-in { from { opacity: 0; transform: scale(.5); } }
+@keyframes f-swap { from { opacity: 0; transform: translateY(40%); filter: blur(4px); } }
+@keyframes f-soft-in { from { opacity: 0; filter: blur(6px); transform: translateY(10px); } }
+@keyframes f-rise { from { opacity: 0; transform: translateY(12px); } }
+@keyframes f-sheet-in { from { transform: translateY(calc(100% + 16px)); } }
+@keyframes f-sheet-out { to { transform: translateY(calc(100% + 16px)); } }
+@keyframes f-menu-in { from { opacity: 0; transform: scale(.8); } }
+@keyframes f-toast-in { from { opacity: 0; transform: translateY(30px) scale(.9); } }
+@keyframes f-toast-out { to { opacity: 0; transform: translateY(20px) scale(.95); } }
+@keyframes f-shake { 15% { transform: translateX(-9px); } 30% { transform: translateX(8px); } 45% { transform: translateX(-5px); } 60% { transform: translateX(3px); } }
+@keyframes f-bounce { 25% { transform: scale(1.14); } 55% { transform: scale(.97); } }
+@keyframes f-pulse { from { transform: scale(1); opacity: .9; } to { transform: scale(2.4); opacity: 0; } }
+@keyframes f-shimmer { from { background-position: 150% 0; } to { background-position: -60% 0; } }
+@keyframes f-dot { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+@keyframes f-draw { to { stroke-dashoffset: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .f *, .f *::before, .f *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
+  .f .f-status[data-state="active"] > i::after, .f .f-skeleton, .f .f-dots > i { animation: none !important; }
+}
